@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="yp"            fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"            fetch="https://github.com/openembedded"/>
+  <remote name="mbebd"         fetch="https://github.com/Mbed-TLS"/>
+  <remote name="ameba-aiot"    fetch="https://github.com/Ameba-AIoT"/>
+
+  <default remote="ameba-aiot" revision="ameba-3.1" sync-j="4"/>
+
+  <!-- yocto -->
+  <project path="sources/yocto/poky" name="poky" revision="9940cd4d8d7b424ec209a446519dd97c3840dcd4" remote="yp" upstream="kirkstone"/>
+  <project path="sources/yocto/meta-openembedded" name="meta-openembedded" revision="4da92ed9be41734f6ced46b981958e2e868cbff2" remote="oe" upstream="kirkstone"/>
+  <project path="sources/yocto/meta-realtek" name="meta-realtek" revision="kirkstone-ameba-3.1">
+    <linkfile src="tools/envsetup.sh" dest="envsetup.sh" />
+  </project>
+
+  <!-- linux -->
+  <project path="sources/kernel/linux-5.4" name="linux-ameba"/>
+
+  <!-- uboot -->
+  <project path="sources/boot/uboot" name="u-boot-ameba"/>
+
+  <!-- optee -->
+  <project path="sources/boot/optee/build" name="optee_build-ameba"/>
+  <project path="sources/boot/optee/optee_os" name="optee_os-ameba"/>
+  <project path="sources/boot/optee/optee_client" name="optee_client-ameba" revision="refs/tags/3.13.0"/>
+
+  <!-- arm-trusted-firmware -->
+  <project path="sources/boot/arm-trusted-firmware" name="atf-ameba"/>
+  <project path="sources/boot/arm-trusted-firmware/mbedtls" name="mbedtls" revision="refs/tags/mbedtls-2.16.2" remote="mbed"/>
+
+  <!-- platform engineering tools, sample code -->
+  <project path="sources/development" name="ameba-linux-development"/>
+
+  <!-- firmware -->                                                                                     
+  <project path="sources/firmware" name="ameba-linux-firmware"/>
+
+  <!-- tools -->
+  <project path="tools/ameba" name="ameba-linux-tools"/>
+
+</manifest>
