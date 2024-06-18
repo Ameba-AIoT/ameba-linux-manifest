@@ -3,7 +3,7 @@
 
   <remote name="yp"            fetch="https://git.yoctoproject.org"/>
   <remote name="oe"            fetch="https://github.com/openembedded"/>
-  <remote name="mbebd"         fetch="https://github.com/Mbed-TLS"/>
+  <remote name="mbed"          fetch="https://github.com/Mbed-TLS"/>
   <remote name="ameba-aiot"    fetch="https://github.com/Ameba-AIoT"/>
 
   <default remote="ameba-aiot" revision="ameba-3.1" sync-j="4"/>
