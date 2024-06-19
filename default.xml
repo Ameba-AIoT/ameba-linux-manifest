@@ -12,7 +12,7 @@
   <project path="sources/yocto/poky" name="poky" revision="9940cd4d8d7b424ec209a446519dd97c3840dcd4" remote="yp" upstream="kirkstone"/>
   <project path="sources/yocto/meta-openembedded" name="meta-openembedded" revision="4da92ed9be41734f6ced46b981958e2e868cbff2" remote="oe" upstream="kirkstone"/>
   <project path="sources/yocto/meta-realtek" name="meta-realtek" revision="kirkstone-ameba-3.1">
-    <linkfile src="tools/envsetup.sh" dest="envsetup.sh" />
+    <copyfile src="tools/envsetup.sh" dest="envsetup.sh" />
   </project>
 
   <!-- linux -->
