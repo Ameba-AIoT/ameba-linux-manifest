@@ -40,9 +40,9 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
-To download the ameba-3.1 release
+To download the ameba-3.1_r1 release
 ```
-$ repo init -u https://github.com/Ameba-AIoT/ameba-linux-manifest -b ameba-3.1
+$ repo init -u https://github.com/Ameba-AIoT/ameba-linux-manifest -b ameba-3.1 -m ameba-3.1_r1.xml
 ```
 
 Setup build environment for a release
@@ -135,3 +135,4 @@ Image Name           | Description
 ---------------------|---------------------------------------------------
 ameba-image-core     | core image with basic functions
 ameba-image-recovery | recovery image
+
