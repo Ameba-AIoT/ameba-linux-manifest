@@ -33,6 +33,9 @@
   <!-- platform engineering tools, sample code -->
   <project path="sources/development" name="ameba-linux-development"/>
 
+  <!-- tests -->
+  <project path="sources/tests" name="ameba-linux-tests"/>
+
   <!-- firmware -->                                                                                     
   <project path="sources/firmware" name="ameba-linux-firmware"/>
 
