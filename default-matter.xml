@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-  <include name="ameba-3.1_r2.xml"/>
+  <include name="default.xml"/>
   
   <!-- matter -->
   <project path="sources/yocto/meta-realtek-matter" name="meta-realtek-matter"/>
