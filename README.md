@@ -42,7 +42,7 @@ Examples
 
 To download the ameba-3.1_r3 release
 ```
-$ repo init -u https://github.com/Ameba-AIoT/ameba-linux-manifest -b ameba-linux-kirkstone -m ameba-3.1_r3.xml
+$ repo init -u https://github.com/Ameba-AIoT/ameba-linux-manifest -b ameba-linux-kirkstone -m ameba-5.4.248-3.3.0.xml
 ```
 
 Setup build environment for a release
