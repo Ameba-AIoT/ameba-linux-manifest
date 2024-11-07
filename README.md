@@ -40,7 +40,7 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
-To download the ameba-3.1_r3 release
+To download the ameba-5.4.248-3.3.0 release
 ```
 $ repo init -u https://github.com/Ameba-AIoT/ameba-linux-manifest -b ameba-linux-kirkstone -m ameba-5.4.248-3.3.0.xml
 ```
