@@ -42,10 +42,9 @@
   <!-- tests -->
   <project path="sources/tests" name="ameba-linux-tests"/>
 
-  <!-- firmware -->
-  <project path="sources/firmware" name="ameba-linux-firmware"/>
-
-  <!-- tools -->
-  <project path="tools" name="ameba-linux-tools"/>
+  <!-- firmware (lib + tools) -->
+  <project path="sources/firmware" name="ameba-linux-firmware" revision="refs/tags/ameba-6.18.24-1.0.0">
+    <linkfile src="tools" dest="tools" />
+  </project>
 
 </manifest>
